@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PartA,HTML基础</title>
+  <style type="text/css">
+    .my-body {
+      padding: 10px;
+      margin: 0;
+    }
+    .tip{
+      font-size: 14px;
+      color: #777;
+    }
+    table{
+      border-collapse: collapse;
+    }
+    table,
+    td,th {
+      border: 1px solid #333;
+    }
+    th,td{
+      padding: 5px 10px;
+    }
+    thead,
+    tfoot {
+      background-color: #777;
+      color: #fff;
+    }
+  </style>
+</head>
+<body class="my-body">
+  <h1>这是h1标题</h1>
+  <h2>这是h2标题</h2>
+  <h3>这是h3标题</h3>
+  <h4>这是h4标题</h4>
+  <h5>这是h5标题</h5>
+  <h6>这是h6标题</h6>
+  <div>
+    div是html中最常用的块级元素之一，它用于定义文档中的区域。
+  </div>
+  <hr/>
+  <p>p是html中最常用的块级元素之一，它用于定义段落。</p>
+  <div class="tip">
+    ul用于定义一个无序列表，li表示列表项,ul的样式可以通过list-style控制,更多请访问<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/list-style">list-style具体用法</a>
+  </div>
+  <ul>
+    <li>没改变list-style的无序列表项1</li>
+    <li>没改变list-style的无序列表项2</li>
+  </ul>
+  <ul style="list-style: none;">
+    <li>改变list-style的无序列表项1</li>
+    <li>改变list-style的无序列表项2</li>
+  </ul>
+  <div class="tip">
+    ol用于定义一个有序的列表，与ul用法一致，只是ol的li会添加顺序标号，可设置type属性来定义标号类型，具体参考说明<a target="_blank" href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/ol">ol详细说明</a>
+  </div>
+  <ol type="A">
+    <li>有序列表项1</li>
+    <li>有序列表项2</li>
+  </ol>
+  <div class="tip">
+    ul与ol可以互相嵌套使用，比如下面例子
+  </div>
+  <ul>
+    <li>
+      标题1
+      <ol>
+        <li>子标题1-1</li>
+        <li>子标题1-2</li>
+      </ol>
+    </li>
+    <li>
+      标题2
+      <ol>
+        <li>子标题2-1</li>
+      </ol>
+    </li>
+  </ul>
+  <hr/>
+  <div class="tip">
+    table表格，以下例子适当添了些样式，border-collapse是一个常用的table样式，具体可参考<a target="_blank" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-collapse">border-collapse详细说明</a>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>姓名</th>
+        <th>年龄</th>
+        <th>编号</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>丽莎</td>
+        <td>18</td>
+        <td>CD001</td>
+      </tr>
+      <tr>
+        <td>玛丽</td>
+        <td>19</td>
+        <td>CD002</td>
+      </tr>
+    </tbody>
+  </table>
+  <hr/>
+  <div class="tip">
+    input输入（表单输入）元素，通过设置type属性，input可以创建多彩多样的交互式控件，具体可参考<a target="_blank" href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/input">input详细</a>
+  </div>
+  <form>
+    <div style="margin:10px 0;">
+      <input type="file" placeholder="选择文件"/>
+    </div>
+    <input name="username" type="text" placeholder="请输入用户名"/>
+    <input type="submit" value="提交类型的按钮,如果在form元素内，会以GET方式提交该表单"></input>
+  </form>
+</body>
+</html>
+
+
