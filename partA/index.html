@@ -42,6 +42,25 @@
     div是html中最常用的块级元素之一，它用于定义文档中的区域。
   </div>
   <hr/>
+  <div style="line-height:100px;text-align:center;background-color:#000000;color: #FFFFFF;">我是块级元素，要占用整行区域</div>
+  <span style="color: #fff;background-color: #f70;line-height: 30px;">我是内联元素，我可以和其他内联元素/内联块级元素共同一行</span><i style="padding:0 10px;color: #fff;background-color: #d11ff5;">我也是内联元素</i><span style="display: inline-block;color: #fff;background-color:#000; margin:20px 10px;">我是内联块级元素，通过设定display:inline-block;而来</span>
+  <hr/>
+  <div class="tip">
+   pre表示预定义格式文本。在该元素中的文本通常按照原文件中的编排，以等宽字体的形式展现出来，文本中的空白符（比如空格和换行符）都会显示出来。(紧跟在 &lt;pre&gt;开始标签后的换行符也会被省略)，
+  </div>
+  <pre style="color: #fff;background-color: #000">
+  <code>
+  .tip{
+    font-size: 14px;
+    color: #777;
+  }
+  table,
+  td,th {
+    border: 1px solid #333;
+  }
+  </code>
+  ddd</pre>
+  <hr/>
   <p>p是html中最常用的块级元素之一，它用于定义段落。</p>
   <div class="tip">
     ul用于定义一个无序列表，li表示列表项,ul的样式可以通过list-style控制,更多请访问<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/list-style">list-style具体用法</a>

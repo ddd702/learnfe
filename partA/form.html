@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" />
+  <title>PartA,HTML基础</title>
+  <style type="text/css">
+    .my-body {
+      padding: 20px;
+    }
+  </style>
+</head>
+<body class="my-body">
+  <form  method="get" action="https://api.qtcat.cn/front/articles/list">
+    <input required autocomplete name="keyword" type="search" placeholder="请输入关键字"/>
+    <label for="page">  数量  </label>
+    <input list="pages" name="page" type="text" value="10"/>
+    <datalist id="pages">
+      <option value="10"></option>
+      <option value="20"></option>
+      <option value="30"></option>
+    </datalist>
+    <input name="offset" type="hidden" value="0"/>
+    <input type="submit" value="搜索"/>
+  </form>
+</body>
+</html>
